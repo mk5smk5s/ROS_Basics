@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <arg name="robot" default="bb_8"/>
+  <arg name="debug" default="false"/>
+  <arg name="gui" default="true"/>
+  <arg name="headless" default="false"/>
+  <arg name="pause" default="true"/>
+
+  <!-- Start Gazebo with a blank world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <!--<arg name="world_name" value="$(find bb_8_gazebo)/worlds/tatooine.world"/>-->
+    <arg name="debug" value="$(arg debug)" />
+    <arg name="gui" value="$(arg gui)" />
+    <arg name="paused" value="$(arg pause)"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="headless" value="$(arg headless)"/>
+  </include>
+
+  <!-- Oh, you wanted a robot? What about a BB-8?-->
+  <include file="$(find bb_8_gazebo)/launch/include/bb_8.launch.xml" />
+
+  <node pkg="bb_8_gazebo" type="fixed_tf_broadcaster.py"
+          name="broadcaster_fixed" />
+  <node pkg="Ex3_2" type="bb8_move_custom_service_server.py"
+          name="movebb8_server_custom" output="log"/>
+  <node pkg="Ex3_2" type="bb8_move_custom_service_client.py"
+        name="service_custom_client_bb8" output="screen"/>
+
+</launch>

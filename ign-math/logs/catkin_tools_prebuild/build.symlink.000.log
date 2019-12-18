@@ -1,0 +1,12 @@
+Symlinking /home/marco/ign-math/devel/./local_setup.bash
+Symlinking /home/marco/ign-math/devel/./env.sh
+Symlinking /home/marco/ign-math/devel/./local_setup.sh
+Symlinking /home/marco/ign-math/devel/./setup.zsh
+Symlinking /home/marco/ign-math/devel/./setup.bash
+Symlinking /home/marco/ign-math/devel/./cmake.lock
+Symlinking /home/marco/ign-math/devel/./setup.sh
+Symlinking /home/marco/ign-math/devel/./local_setup.zsh
+Symlinking /home/marco/ign-math/devel/./_setup_util.py
+Symlinking /home/marco/ign-math/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
+Symlinking /home/marco/ign-math/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake
+Symlinking /home/marco/ign-math/devel/lib/pkgconfig/catkin_tools_prebuild.pc

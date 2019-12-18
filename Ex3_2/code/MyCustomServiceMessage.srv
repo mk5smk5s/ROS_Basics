@@ -1,0 +1,4 @@
+float64 radius #The distance of each side of the square
+int32 repetitions #number of times bb8 execute the square movement
+---
+bool success #achieve it or not

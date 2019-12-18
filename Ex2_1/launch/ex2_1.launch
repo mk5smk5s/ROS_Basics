@@ -1,0 +1,5 @@
+<launch>
+
+<node pkg="Ex2_1" type="ex2_1.py" name="publisher" output="screen"> </node>
+
+</launch>

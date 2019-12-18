@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <include file="$(find drone_construct)/launch/main.launch" />
+
+  <include file="$(find ardrone_as)/launch/action_server.launch" />
+
+<!--<include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">-->
+  <node pkg="timed_roslaunch" type="timed_roslaunch.sh"
+
+    args="2 Ex4_1 action_client_cancel_quadcopter.launch"
+    name="timed_roslaunch" output="screen" />
+<!--args="2 Ex4_1 action_client_quadcopter.launch"-->
+
+ <!-- <node pkg="Ex4_1" type="action_client_move_photo.py"
+          name="move_photo_drone_action_client" output="log"/>-->
+
+
+</launch>

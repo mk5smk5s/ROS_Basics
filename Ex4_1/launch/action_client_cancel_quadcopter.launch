@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+
+ <node pkg="Ex4_1" type="cancel_goal_test.py"
+          name="move_photo_drone_action_client" output="screen"/>
+
+
+</launch>

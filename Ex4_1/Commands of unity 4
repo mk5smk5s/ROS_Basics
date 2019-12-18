@@ -1,0 +1,5 @@
+roslaunch ardrone_as action_server.launch
+
+rostopic list //in order to see also the actions available on the robot
+
+

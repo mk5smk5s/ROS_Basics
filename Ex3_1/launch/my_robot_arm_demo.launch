@@ -1,0 +1,11 @@
+<launch>
+
+  <include file ="$(find iri_wam_gazebo)/launch/main.launch"/>
+
+  <include file ="$(find iri_wam_reproduce_trajectory)/launch/start_service.launch"/>
+
+  <!--<node pkg ="iri_wam_aff_demo" type ="iri_wam_aff_demo_node" name = "iri_wam_aff_demo" output ="screen"> </node>-->
+
+  <node pkg ="Ex3_1" type ="exercise_3_1.py" name = "service_client" output ="screen"> </node>
+
+</launch>

@@ -1,0 +1,5 @@
+<launch>
+
+<node pkg="Ex2_2" type="ex2_2.py" name="subscriber" output="screen" > </node>
+
+</launch>

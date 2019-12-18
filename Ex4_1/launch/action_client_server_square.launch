@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <include file="$(find drone_construct)/launch/main.launch" />
+
+  <include file="$(find Ex4_1)/launch/action_server_square.launch" />
+
+<include file="$(find timed_roslaunch)/launch/timed_roslaunch.launch">
+  <node pkg="timed_roslaunch" type="timed_roslaunch.sh"
+    args="2 Ex4_1 action_client_square.py"
+    name="timed_roslaunch" output="screen" />
+</launch>

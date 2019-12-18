@@ -1,0 +1,36 @@
+roslaunch drone_construct main.launch
+
+//takeoff the drone
+rostopic pub /drone/takeoff std_msgs/Empty "{}"
+
+//command the drone with keyboard
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+
+//land the drone
+rostopic pub /drone/land std_msgs/Empty "{}"
+
+===============================================================
+Call an action:
+
+1)roslaunch drone_construct main.launch 
+
+2)roslaunch ardrone_as action_server.launch
+
+3)roscd Ex4_1/code
+  ./ardrone_action_client.py
+
+==============================================================
+Call the action waiting until the action client will finish:
+
+1)roslaunch drone_construct main.launch 
+
+2)roslaunch ardrone_as action_server.launch
+
+3)roscd Ex4_1/code
+./wait_for_result_test.py  
+
+
+
+
+
+
