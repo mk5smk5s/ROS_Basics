@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <include file="$(find bb_8_gazebo)/launch/main_empty.launch" >
+      <arg name="pause" value="false"/>
+  </include>
+  
+</launch>

@@ -1,0 +1,36 @@
+<sdf version="1.4">
+  <model name="star_destroyer">
+    <static>1</static>
+    <link name="link">
+      <collision name="colision">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://star_destroyer/meshes/star_destroyer_new.dae</uri>
+	    <scale> 0.2 0.2 0.2 </scale>
+          </mesh>
+        </geometry>
+        <surface>
+          <bounce />
+          <friction>
+            <ode />
+          </friction>
+          <contact>
+            <ode />
+          </contact>
+        </surface>
+      </collision>
+      <visual name="visual">
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://star_destroyer/meshes/star_destroyer_new.dae</uri>
+	    <scale> 0.2 0.2 0.2 </scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
+
+

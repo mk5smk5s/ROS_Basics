@@ -1,0 +1,13 @@
+<package>
+  <name>bb_8_description</name>
+  <version>0.0.1</version>
+  <description>
+    URDF for BB-8 Robot.
+  </description>
+  <author>Jose Capriles</author>
+  <maintainer email="jcapriles@theconstructsim.com">Jose Capriles</maintainer>
+  <license>TBD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+</package>
